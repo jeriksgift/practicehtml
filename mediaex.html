@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+    .one{
+        height: 100px;
+        background-color: greenyellow;
+        flex-basis: 100%;
+    }
+    .two{
+        height: 200px;
+        background-color: cyan;
+        flex-basis: 32%;
+        margin: 5px;
+    }
+    .three{
+        height: 200px;
+        background-color: grey;
+        flex-basis: 20.25%;
+        margin: 5px;
+    }
+    @media screen and (max-width: 1007px) {
+        .two{
+        height: 100px;
+        flex-basis: 100%;
+    }
+    .three{
+        height: 100px;
+        flex-basis: 40%;
+    }
+    }
+    @media screen and (max-width: 640px) {
+        .two{
+        height: 150px;
+        flex-basis: 100%;
+    }
+    .three{
+        height: 100px;
+        flex-basis: 100%;
+    }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="two"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="three"></div>
+        <div class="three"></div>
+        <div class="three"></div>
+    </div>
+</body>
+</html>
